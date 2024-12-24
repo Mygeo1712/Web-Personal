@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Input Data</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Input Data</h1>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="jurusan">Jurusan:</label>
+            <input type="text" id="jurusan" name="jurusan" required>
+
+            <label for="instagram">Akun Instagram:</label>
+            <input type="text" id="instagram" name="instagram" required>
+
+            <label for="photo">Foto (jpg, jpeg, png):</label>
+            <input type="file" id="photo" name="photo" accept=".jpg, .jpeg, .png" required>
+
+            <button type="submit">Kirim Data</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
